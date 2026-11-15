@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ochieng Philip Otieno — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Fraunces:opsz,wght@9..144,300..800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<style>
+:root{--bg:#E8EEF3;--ink:#13203A;--muted:#4E5D75;--line:#B9C5D3;--accent:#2347F5;--name:#0B8A6A;--on-accent:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1726;--ink:#E6ECF5;--muted:#9AA8BD;--line:#2A3650;--accent:#7C95FF;--name:#4FD1A5;--on-accent:#0F1726;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1726;--ink:#E6ECF5;--muted:#9AA8BD;--line:#2A3650;--accent:#7C95FF;--name:#4FD1A5;--on-accent:#0F1726;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 "Newsreader",Georgia,serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:1.5rem 0;font:500 1rem "Bricolage Grotesque",system-ui,sans-serif}
+nav a{text-decoration:none;margin-left:1.5rem}
+nav a:first-child{margin-left:0}
+nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.hero{padding:clamp(3rem,12vw,8rem) 0 clamp(3rem,8vw,6rem)}
+.name{font-family:"Fraunces",Georgia,serif;font-size:clamp(3.5rem,17vw,10.5rem);line-height:.95;letter-spacing:-.03em;margin:0;font-weight:400;color:var(--name);transition:font-weight .5s ease,letter-spacing .5s ease;cursor:default;overflow-wrap:anywhere}
+.name:hover{font-weight:750;letter-spacing:-.035em}
+.lede{max-width:34rem;margin:2rem 0 0;font-size:1.375rem;line-height:1.5}
+.lede em{color:var(--muted)}
+h2{font:600 1.5rem "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 1.5rem;letter-spacing:-.01em}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:5rem 1fr;gap:.25rem 1.5rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .yr{color:var(--muted);font-variant-numeric:tabular-nums}
+.row h3{font:600 1.25rem "Bricolage Grotesque",system-ui,sans-serif;margin:0}
+.row p{margin:.25rem 0 0;color:var(--muted);max-width:38rem}
+.about{display:grid;grid-template-columns:1fr;gap:1rem;max-width:38rem}
+.about p{margin:0}
+.btn{display:inline-block;margin-top:1rem;padding:.85rem 1.5rem;background:var(--accent);color:var(--on-accent);border-radius:.5rem;font:600 1rem "Bricolage Grotesque",system-ui,sans-serif;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+@media (max-width:34rem){.row{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.name{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main"><a href="#top">Ochieng Philip Otieno</a><span><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></span></nav>
+
+  <header class="hero" id="top">
+    <h1 class="name">Ochieng<br>Philip<br>Otieno</h1>
+    <p class="lede">I’m an IT student at Maseno University. I build websites, work with data, and design user interfaces.</p>
+  </header>
+
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Selected work</h2>
+    <div class="row"><span class="yr">Now</span><div><h3>Group project</h3><p>A team project I’m building with classmates at Maseno University. <em>Add its name, what it does, and your part.</em></p></div></div>
+    <div class="row"><span class="yr">GitHub</span><div><h3>Web development</h3><p>Websites and web apps I’ve built, with the code on my GitHub account.</p></div></div>
+    <div class="row"><span class="yr">GitHub</span><div><h3>Data science and UI/UX</h3><p>Data analysis projects and interface designs, also on my GitHub account.</p></div></div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <div class="about">
+      <p>I’m studying Information Technology at Maseno University. My interests are web development, data science, and UI/UX design.</p>
+      <p>I’m currently working on a group project with my classmates, and I put more of my work on GitHub.</p>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <p>Have a project or an opportunity in mind? Send me a note or call me.</p>
+    <p>Phone: <a href="tel:+254746719348">0746 719 348</a></p>
+    <a class="btn" href="mailto:ochiengphilip098@gmail.com">Send an email</a>
+  </section>
+
+  <footer>© 2026 Ochieng Philip Otieno</footer>
+</div>
+</body>
+</html>
